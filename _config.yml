@@ -1,21 +1,33 @@
-# Site settings
-title: Daktilo
+title: Blog of Frederik Vosberg
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A Blog about webdevelopment with PHP, TYPO3, Flow, Neos, Ruby, CSS ...
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://hitchhiker.ma" # the base hostname & protocol for your site
+url: "https://fvosberg.github.io"
+ 
+# google_analytics: 'UA-XXXXXXXX-X'
 
 author:
-  fullname: Motaquillah Maddane
-  googleplus: https://www.google.com/+MotaquillahMaddane
+  name: Frederik Vosberg
+  email: frederik@rattazonk.com
+  uri: https://fvosberg.github.io
   github: kronik3r
   twitter: electrik_frog
   # disqus: your_disqus_username
 
-# google_analytics: 'UA-XXXXXXXX-X'
-
-# Build settings
 markdown: kramdown
+#permalink: /post/:title
+
+timzone: Europe/Berlin
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "null"
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"

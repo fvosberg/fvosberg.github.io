@@ -4,7 +4,10 @@ layout: default
 {% include post/title.html %}
 
 <div class="content">
-    {{ content }}
+	<article>
+		<time hidden>{{ page.date | date: '%B %-d, %Y' }}</time>
+		{{ content }}
+	</article>
 </div>
 
 {% include post/about.html %}
