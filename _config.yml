@@ -1,4 +1,4 @@
-title: Blog of Frederik Vosberg
+title: Frederik Vosberg
 description: >
   A Blog about webdevelopment with PHP, TYPO3, Flow, Neos, Ruby, CSS ...
 
@@ -11,9 +11,9 @@ author:
   name: Frederik Vosberg
   email: frederik@rattazonk.com
   uri: https://fvosberg.github.io
-  github: kronik3r
-  twitter: electrik_frog
-  # disqus: your_disqus_username
+  github: fvosberg
+  twitter: FrediVosberg
+  disqus: fvosberg
 
 markdown: kramdown
 #permalink: /post/:title

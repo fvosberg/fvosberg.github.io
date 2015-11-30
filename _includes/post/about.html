@@ -1,7 +1,7 @@
 <div class="about">
     <div class="about__devider">*****</div>
     <div class="about__text">
-        Written by <strong> {% if page.author.fullname %} {{ page.author.fullname }} {% else %} {{ site.author.fullname }} {% endif %}</strong>
-        on <strong>{{ page.date | date: "%d %B %Y" }}</strong>
+		Für Dich mit &#9825; geschrieben <br />von <strong> {% if page.author.fullname %} {{ page.author.fullname }} {% else %} {{ site.author.name }} {% endif %}</strong>
+        am <strong>{{ page.date | date: "%d %B %Y" }}</strong>
     </div>
 </div>

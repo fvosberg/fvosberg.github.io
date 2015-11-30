@@ -1,12 +1,10 @@
 ---
 layout: page
 title: About
-subtitle: Just who the hell you think I am?
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hi, mein Name ist Frederik. Ich bin Webentwickler in Bonn und beschäftige mich die meiste Zeit mit PHP, TYPO3, Flow und Neos aber auch mit Node.js und Ruby.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+In diesem Blog werde ich über die Dinge schreiben, die mich beruflich beschäftigen. Sei es der Weg zum TDD, der Anwendung von Design Patterns oder, wie in meinem ersten Post, einfach ein paar Tipps zum Schreiben von besserem CSS.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
