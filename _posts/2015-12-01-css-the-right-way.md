@@ -11,7 +11,7 @@ Erstens: CSS kann eine Bitch sein. Wie oft dachte man schon, man hätte `float` 
 
 Zweitens: Die Meisten wollen sich beim CSS-Schreiben keine großen Gedanken machen. Ich will, dass die Box 100px breit ist und einen grünen Hintergrund hat, also schreibe ich erst einen Selektor, der diese Box anspricht und dann setze ich die zwei entsprechenden CSS Regeln. Das funktioniert am Anfang auch super, irgendwann wird es aber unübersichtlich, wenn man nicht einige Regeln dabei beachtet. (Wenn ihr das schon intuitiv tut, gut für Euch)
 
-## !important is eval
+## !important is evil
 
 Ein Thema bei dem es mir schwer fällt die Fassung zu behalten und sachlich zu diskutieren. Solange Euch keiner zwingt, benutzt kein `!important`. Die Rangordnung von CSS Regeln definiert sich wie folgt (aufsteigend definiert, als spätere sind wichtiger und überschreiben vorherige):
 
