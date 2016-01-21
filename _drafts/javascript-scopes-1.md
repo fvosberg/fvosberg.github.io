@@ -3,11 +3,11 @@ title: JavaScript Scopes - Teil 1
 lang: de
 ---
 
-Das hier ist ein der erste Teil eines Grundlagenartikel über Scopes in JavaScript. Am Anfang werde ich einfachste Grundlagen wiederholen, die dann immer komplizierter werden. Im zweiten Teil werde ich dadurch Closures erklären, die bei vielen für Kopfschmerzen sorgen. 
+Das hier ist der erste Teil eines Grundlagenartikel über Scopes in JavaScript. Am Anfang werden wir einfachste Grundlagen wiederholen, die dann immer komplizierter werden. Im zweiten Teil werden wir dann Closures unter die Lupe nehmen, lernen wie sie funktionieren und warum sie so beliebt sind.
 
 ## Was ist ein Scope?
 
-Ein Scope ist der Bereich, in dem eine Variable deklariert ist, also verfügbar. In JavaScript deklarieren wir Variablen mit dem ```var```-Statement. Ab ECMAScript 6 gibt es durch das ```let```-Statement eine zweite Möglichkeit. Diese betrachten wir erst im zweiten Teil. 
+Ein Scope ist der Bereich, in dem eine Variable deklariert ist, er also zur Verfügung steht. In JavaScript deklarieren wir Variablen mit dem ```var```-Statement. Ab ECMAScript 6 gibt es durch das ```let```-Statement eine zweite Möglichkeit Variablen zu deklarieren. Da es sich aber etwas anders verhält und noch nicht so verbreitet ist, lassen wir das erstmal außen vor und besprechen es am Ende des zweiten Teils als Ausnahme.
 
 ## Funktionen sind die Grenzen von Scopes
 
@@ -71,7 +71,7 @@ test();
 console.log(a);
 {% endhighlight %}
 
-Mit dem bis jetzt Gelernten ist es richtig davon auszugehen, dass drei mal der Wert 5 geloggt wird. Das Problem ist, dass die Variablendeklaration (```var a;``` in der Funktion ```test```) nicht erst zur Laufzeit vom Interpreter ausgewertet, sondern schon vorher von dem Parser. Das bedeutet, dass der Interpreter in dem Scope der Funktion *test* eine eigene Variable mit dem Namen *a* hat. Diese hat während des Logs noch keinen Wert zugewiesen bekommen und hat somit den Wert ```undefined```. Deswegen erscheint in der Konsole Folgendes:
+Mit dem bis jetzt Gelernten ist es richtig davon auszugehen, dass drei mal der Wert 5 geloggt wird. Das Problem ist, dass die Variablendeklaration (```var a;``` in der Funktion ```test```) nicht erst zur Laufzeit vom Interpreter ausgewertet wird, sondern schon vorher von dem Parser. Das bedeutet, dass der Interpreter in dem Scope der Funktion *test* eine eigene Variable mit dem Namen *a* hat. Diese hat während des Logs noch keinen Wert zugewiesen bekommen und hat somit den Wert ```undefined```. Deswegen erscheint in der Konsole Folgendes:
 
 {% highlight javascript %}
 5
