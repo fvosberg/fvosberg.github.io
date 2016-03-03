@@ -47,6 +47,14 @@ h2 {
 	border: none;
 }
 
+h3 {
+	@extend h2;
+
+	font-size: 1em;
+	margin-bottom: .5em;
+	margin-top: 2em;
+}
+
 a {
 	color: rgba(200, 50, 50, 1);
 	text-decoration: none;
