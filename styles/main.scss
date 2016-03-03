@@ -38,6 +38,15 @@ h1 {
 	margin-bottom: 1.6em;
 }
 
+h2 {
+	@extend h1;
+
+	font-size: 1.3em;
+	font-weight: bold;
+	padding-bottom: 0;
+	border: none;
+}
+
 a {
 	color: rgba(200, 50, 50, 1);
 	text-decoration: none;
