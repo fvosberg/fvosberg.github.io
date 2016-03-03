@@ -21,5 +21,9 @@ article.teaser {
   div.subheadline {
     font-size: .8em;
     line-height: 1em;
+
+	@media screen and (max-width: 38rem) {
+		margin-top: 1em;
+	}
   }
 }
