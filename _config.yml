@@ -17,6 +17,8 @@ author:
 
 markdown: kramdown
 #permalink: /post/:title
+sass:
+  style: compressed
 
 timzone: Europe/Berlin
 

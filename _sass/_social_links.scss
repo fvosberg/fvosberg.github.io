@@ -1,0 +1,12 @@
+#social_links {
+	li {
+		display: inline-block;
+	}
+	a {
+		color: #737685;
+
+		&:hover {
+			color: #2d303a;
+		}
+	}
+}

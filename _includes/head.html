@@ -9,13 +9,3 @@
 {% endif %}
 
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-<style>
-	{% capture basic_styles %}
-		{% include sass/basic.scss %}
-		{% if page.content contains "endhighlight" %}
-			{% include sass/syntax.scss %}
-		{% endif %}
-	{% endcapture %}
-	{{ basic_styles | scssify }}
-</style>

@@ -1,0 +1,21 @@
+article {
+	min-height: 60vh;
+	header {
+		@extend h1;
+
+		h1 {
+			border: none;
+			font-size: 1em;
+			margin-bottom: 0;
+			padding: 0;
+		}
+
+		div.subheadline {
+			font-size: .56em;
+			font-family: $font-serif;
+		}
+	}
+	time {
+		color: #737685;
+	}
+}

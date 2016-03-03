@@ -1,14 +1,17 @@
 ---
 layout: page
+title: Frederik Vosberg
 ---
 
-<ul class="list-posts">
-    {% for post in site.posts %}
-        <li class="post-teaser">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <span class="post-teaser__title">{{ post.title }}</span>
-                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
-            </a>
-        </li>
-    {% endfor %}
-</ul>
+{% for post in site.posts %}
+  <article class="teaser">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      <h1>{{ post.title }}</h1>
+    </a>
+    <div class=subheadline>
+      {{ post.subtitle }}
+      <a href="/author" rel=author>Frederik Vosberg</a> -
+      <time>{{ post.date | date: '%B %-d, %Y' }}</time>
+    </div>
+  </article>
+{% endfor %}
