@@ -61,13 +61,13 @@ a {
 	font-style: italic;
 	&:hover {
 		color: rgba(230, 50, 50, 1);
-		border-bottom: 1px solid currentColor;
+		text-decoration: underline;
 	}
 }
 
 p {
 	line-height: 2em;
-	letter-spacing: .035em;
+	letter-spacing: .02em;
 	margin-bottom: 1.3em;
 }
 

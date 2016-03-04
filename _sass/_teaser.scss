@@ -10,6 +10,9 @@ article.teaser {
     display: block;
     color: inherit;
     font-style: inherit;
+	&:hover {
+		text-decoration: none;
+	}
   }
   h1 {
     padding: 0;
