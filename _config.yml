@@ -3,14 +3,14 @@ description: >
   A Blog about webdevelopment with PHP, TYPO3, Flow, Neos, Ruby, CSS ...
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://fvosberg.github.io"
- 
+url: "http://blog.frederikvosberg.de"
+
 # google_analytics: 'UA-XXXXXXXX-X'
 
 author:
   name: Frederik Vosberg
   email: frederik@rattazonk.com
-  uri: https://fvosberg.github.io
+  uri: http://frederikvosberg.de
   github: fvosberg
   twitter: FrediVosberg
   disqus: fvosberg
