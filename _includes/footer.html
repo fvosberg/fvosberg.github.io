@@ -1,6 +1,8 @@
 <footer>
 	<p>
 		Für Dich mit &#9825; geschrieben <br />von <strong> {% if page.author.fullname %} {{ page.author.fullname }} {% else %} {{ site.author.name }} {% endif %}</strong>
-        am <strong>{{ page.date | date: "%d %B %Y" }}</strong>
+		{% if page.date %}
+			am <strong>{{ page.date | date: "%d %B %Y" }}</strong>
+		{% endif %}
 	</p>
 </footer>
