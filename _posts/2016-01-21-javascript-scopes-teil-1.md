@@ -7,7 +7,7 @@ Das hier ist der erste Teil eines Grundlagenartikel über Scopes in JavaScript. 
 
 ## Was ist ein Scope?
 
-Ein Scope ist der Bereich, in dem eine Variable deklariert ist, er also zur Verfügung steht. In JavaScript deklarieren wir Variablen mit dem ```var```-Statement. Ab ECMAScript 6 gibt es durch das ```let```-Statement eine zweite Möglichkeit Variablen zu deklarieren. Da es sich aber etwas anders verhält und noch nicht so verbreitet ist, lassen wir das erstmal außen vor und besprechen es am Ende des zweiten Teils als Ausnahme.
+Ein Scope ist der Bereich, in dem eine Variable deklariert ist, er also zur Verfügung steht. In JavaScript deklarieren wir Variablen mit dem ```var```-Statement. Ab ECMAScript 6 gibt es durch das ```let```-Statement eine zweite Möglichkeit. Da es sich aber etwas anders verhält und noch nicht so verbreitet ist, lassen wir das erstmal außen vor und besprechen es am Ende des zweiten Teils als Ergänzung.
 
 ## Funktionen sind die Grenzen von Scopes
 
@@ -79,7 +79,7 @@ undefined
 5
 {% endhighlight %}
 
-Um Verwirrungen zu vermeiden empfehle ich Euch die ```var```-Statements immer an den Anfang des Scopes zu setzen. Denn folgender Code hat die gleiche Ausgabe und das kann zu Missverständnissen führen:
+Um Verwirrungen zu vermeiden sollte man die ```var```-Statements immer an den Anfang des Scopes setzen. Denn folgender Code hat die gleiche Ausgabe und das kann zu Missverständnissen führen:
 
 {% highlight javascript %}
 var a = 5;
@@ -95,4 +95,4 @@ console.log(a);
 
 ## Schlusswort
 
-Sehr gut, der Grundstein ist gelegt. Diese einfachen Grundlagen verhindern schon einige Kopfschmerzen und wildes Rumprobieren. Im zweiten Teil werden wir uns noch weiter mit Scopes beschäftigen, insbesondere mit Closures. Insbesondere letztere sorgen für einen wesentlichen besseren Code, auch wenn er noch prozedural geschrieben wird.
+Sehr gut, der Grundstein ist gelegt. Diese einfachen Grundlagen verhindern schon einige Kopfschmerzen und wildes Rumprobieren. Im zweiten Teil werden wir uns noch weiter mit Scopes beschäftigen, insbesondere mit Closures. Letztere helfen auch komplizierteren Code wesentlich besser lesbar zu gestalten, auch wenn noch keine Prototypen oder Ähnliches nötig sind.

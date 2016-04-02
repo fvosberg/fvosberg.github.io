@@ -86,10 +86,19 @@ footer {
 	margin-top: 2em;
 }
 
-ul {
-	list-style-type: square;
+ul, ol {
 	padding-left: 2em;
 	margin-bottom: 1.3em;
+	ul, ol {
+		margin-top: .3em;
+		margin-bottom: .3em;
+	}
+}
+ul {
+	list-style-type: square;
+}
+ol {
+	list-style-type: decimal;
 }
 
 body > header {

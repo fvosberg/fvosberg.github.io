@@ -9,13 +9,13 @@ Dazu führen 2 Parameter: Das sind die Stack Order, also die Reihenfolge der Ele
 
 ## Die Stack Order
 
-Die Stack Order ist der intuitivere Parameter und seltener das Problem. Deswegen betrachten wir für die Stack Order nur Schwesternelemente, die direkte Kinder des Body-Tags sind.
+Die Stack Order ist der intuitivere Parameter und seltener das Problem. Um sie getrennt von dem Stack Context zu betrachten, nehmen wir erst einmal nur Schwesternelemente, die direkte Kinder des Body-Tags sind. Denn Elemente auf einer Ebene sind zwangsläufig im gleichen Kontext.
 
 ### Positionierte Elemente über Elementen im Fluss
 
-Sobald sich 2 Elemente überlappen sind positionierte Elemente vor nicht positionierten. 
+Sobald sich 2 Elemente überlappen sind positionierte Elemente vor nicht positionierten.
 
-*Nicht positioniert* bedeutet in diesem Fall, dass der Wert der CSS-Eigenschaft `position` nicht `static` ist. 
+*Nicht positioniert* bedeutet in diesem Fall, dass der Wert der CSS-Eigenschaft `position` nicht `static` ist.
 
 <iframe width="100%" height="270" src="//jsfiddle.net/fvosberg/983w12gg/1/embedded/result,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -31,9 +31,9 @@ Um die Reihenfolge von positionierten Elemnten steuern zu können gibt es die CS
 
 Ist der Z-Index gleich, zum Beispiel weil er nicht definiert ist, entscheidet die Reihenfolge im HTML.
 
-<iframe width="100%" height="270" src="//jsfiddle.net/fvosberg/983w12gg/3/embedded/result,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="270" src="//jsfiddle.net/fvosberg/983w12gg/7/embedded/result,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-Das grüne und das rote `DIV` haben sind beide positioniert und haben den gleichen `z-index`. Das Grüne überlagert das Rote, weil es später definiert wurde. 
+Das grüne und das rote `DIV` haben sind beide positioniert und haben den gleichen `z-index`. Das Grüne überlagert das Rote, weil es später definiert wurde.
 
 ### Zusammenfassung
 
@@ -57,11 +57,11 @@ Bei unpositionierten Elementen gilt an sich auch die Regel, dass später definie
 
 <iframe width="100%" height="210" src="//jsfiddle.net/fvosberg/2erg45fd/2/embedded/result,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-Hier sieht man, dass der Text des ersten Absatzes, der über ihn hinaus geht, zwischen dem Hintergrund und dem Text des Zweiten angezeigt wird. Möchte man diesen Effekt vermeiden muss man eins der Elemente positionieren. 
+Hier sieht man, dass der Text des ersten Absatzes, der über ihn hinaus geht, zwischen dem Hintergrund und dem Text des Zweiten angezeigt wird. Möchte man diesen Effekt vermeiden muss man eins der Elemente positionieren.
 
 ## Der Stack Context
 
-Hier passieren häufiger Fehler weil es weniger intuitiv und weniger bekannt ist. Die *Stack Order* gilt innerhalb eines *Stack Context*, der Kontext ist also wichtiger. Die Kontexte selbst befinden sich zueinander wieder in einer Stack Order. 
+Hier passieren häufiger Fehler weil es weniger intuitiv und weniger bekannt ist. Die *Stack Order* gilt innerhalb eines *Stack Context*, der Kontext ist also wichtiger. Die Kontexte selbst befinden sich zueinander wieder in einer Stack Order.
 
 Ein neuer Kontext wird durch folgende Elemente erzeugt
 
