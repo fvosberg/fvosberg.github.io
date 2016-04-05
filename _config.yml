@@ -38,3 +38,10 @@ defaults:
       type: "drafts"
     values:
       layout: "post"
+
+gems:
+  - jekyll-sitemap
+
+exclude:
+  - README.html
+  - google938354d04c198ece.html
