@@ -5,7 +5,7 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blog.frederikvosberg.de"
 
-# google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-75974425-1'
 
 author:
   name: Frederik Vosberg
