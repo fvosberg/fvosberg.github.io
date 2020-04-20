@@ -1,1 +1,1 @@
-self.__BUILD_MANIFEST = (function(a){return {"/":[a],"/curriculum-vitae":[a],"/index":[a]}}("static\u002Fchunks\u002F433d210b95d873a697b0846642509b2d7e8fe75e.a2ae35cd89d927024490.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
+self.__BUILD_MANIFEST = (function(a){return {"/":[a],"/curriculum-vitae":[a],"/index":[a]}}("static\u002Fchunks\u002F433d210b95d873a697b0846642509b2d7e8fe75e.d5a411b2e24ad77e9006.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
